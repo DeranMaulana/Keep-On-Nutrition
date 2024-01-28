@@ -3,14 +3,15 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Login</title>
+    <link rel="icon" href="{{ asset('kon/aset/KON-hitam.png') }}">
+    <title>KON - Login</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="{{ asset('kon/login/css/style.css') }}">
 </head>
 <body>
     <div class="wrapper">
         <div class="logo">
-            <img src="{{ asset('kon//login/aset/logo.jpg') }}" alt="">
+            <img src="{{ asset('kon/aset/KON-putih.jpg') }}" alt="">
         </div>
         <div class="text-center mt-4 name">
             KON
