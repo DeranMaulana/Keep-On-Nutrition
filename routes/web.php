@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\login\DaftarController;
+use App\Http\Controllers\login\LoginController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -14,5 +16,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('login\login');
 });
+Route::get('/daftar', [DaftarController::class,'tampil'])-> name('daftar');
+Route::get('/login', [LoginController::class,'tampil'])-> name('login');
