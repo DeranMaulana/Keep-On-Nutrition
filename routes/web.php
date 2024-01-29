@@ -1,7 +1,9 @@
 <?php
 
+use App\Http\Controllers\LandingPageController;
 use App\Http\Controllers\login\DaftarController;
 use App\Http\Controllers\login\LoginController;
+use App\Http\Controllers\login\AuthController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -18,5 +20,13 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('login\login');
 });
-Route::get('/daftar', [DaftarController::class,'tampil'])-> name('daftar');
-Route::get('/login', [LoginController::class,'tampil'])-> name('login');
+
+Route::get('login', [LoginController::class,'index'])->name('login');
+Route::get('daftar', [DaftarController::class,'index'])->name('daftar');
+Route::post('proses_login', [AuthController::class,'proses_login'])->name('proses_login');
+Route::get('logout', [AuthController::class,'logout'])->name('logout');
+Route::post('proses_daftar',[DaftarController::class,'store'])->name('proses_daftar');
+
+Route::group(['middleware' => ['auth']], function () {
+        Route::get('/main/landing_page', [LandingPageController::class,'index']);
+    });

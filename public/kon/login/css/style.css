@@ -3,7 +3,7 @@
 
 html, body {
     height: 100%;
-    overflow: hidden;
+    overflow: auto;
 }
 
 /* Reseting */
@@ -19,21 +19,22 @@ body {
 }
 
 .wrapper {
-    position: relative; bottom: 30px;
+    position: relative; top: 5px;
     max-width: 350px;
-    min-height: 500px;
+    min-height: 450px;
     margin: 80px auto;
-    padding: 40px 30px 30px 30px;
+    padding: 40px 17px 25px 17px;
     background-color: #f9f6ee;
     border-radius: 15px;
     box-shadow: 13px 13px 20px #6d6f6c, -13px -13px 20px #6d6f6c;
 }
 
 .wrapper-register {
+    position: relative; top: 22px;
     max-width: 350px;
-    min-height: 500px;
+    min-height: 550px;
     margin: 23px auto;
-    padding: 10px 10px 20px 10px;
+    padding: 10px 30px 20px 30px;
     background-color: #f9f6ee;
     border-radius: 15px;
     box-shadow: 13px 13px 20px #6d6f6c, -13px -13px 20px #6d6f6c;
@@ -83,6 +84,7 @@ body {
     letter-spacing: 1.3px;
     padding-left: 10px;
     color: #555;
+    
 }
 .wrapper .form-field input {
     width: 100%;
@@ -91,7 +93,7 @@ body {
     outline: none;
     background: none;
     font-size: 1.2rem;
-    color: #666;
+    color: #000000;
     padding: 10px 15px 10px 10px;
     /* border: 1px solid red; */
 }
@@ -102,7 +104,7 @@ body {
     outline: none;
     background: none;
     font-size: 1rem;
-    color: #666;
+    color: #000000;
     padding: 5px 5px 5px 5px;
     /* border: 1px solid red; */
 }

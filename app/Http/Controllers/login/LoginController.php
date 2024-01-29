@@ -7,7 +7,7 @@ use Illuminate\Http\Request;
 
 class LoginController extends Controller
 {
-    public function tampil()
+    public function index()
     {
         return view('login/login');
     }
