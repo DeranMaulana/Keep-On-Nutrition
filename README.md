@@ -1,6 +1,6 @@
 # Keep On Nutrition
 
-Keep On Nutrition adalah aplikasi web yang dirancang untuk membantu pengguna memantau asupan nutrisi mereka. Aplikasi ini memungkinkan pengguna untuk mencari informasi tentang makanan, menghitung kandungan kalori, dan melacak kemajuan mereka dalam mencapai tujuan kesehatan. Aplikasi ini mengintegrasikan beberapa API untuk memperoleh data makanan dan informasi gizi secara real-time.
+Keep On Nutrition adalah aplikasi web yang dirancang untuk membantu pengguna memantau asupan nutrisi mereka. Aplikasi ini memungkinkan pengguna untuk mencari informasi tentang makanan, menghitung kandungan kalori, dan melacak kemajuan mereka dalam mencapai tujuan kesehatan. Aplikasi ini mengintegrasikan beberapa API untuk memperoleh data makanan dan informasi gizi secara real-time. Aplikasi ini dibuat untuk memenuhi tugas besar dari mata kuliah Penerapan Teknologi Internet
 
 ---
 
