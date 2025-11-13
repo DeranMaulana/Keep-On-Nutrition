@@ -1,66 +1,77 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# Keep On Nutrition
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+Keep On Nutrition adalah aplikasi web yang dirancang untuk membantu pengguna memantau asupan nutrisi mereka. Aplikasi ini memungkinkan pengguna untuk mencari informasi tentang makanan, menghitung kandungan kalori, dan melacak kemajuan mereka dalam mencapai tujuan kesehatan. Aplikasi ini mengintegrasikan beberapa API untuk memperoleh data makanan dan informasi gizi secara real-time.
 
-## About Laravel
+---
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+## Fitur Utama
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+- **Pencarian Makanan dan Kandungan Gizi**  
+  Pengguna dapat mencari berbagai jenis makanan dan mendapatkan informasi terkait kandungan kalori, protein, lemak, dan karbohidrat.
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+- **Pelacakan Asupan Gizi**  
+  Pengguna dapat mencatat makanan yang mereka konsumsi dan memantau asupan gizi mereka sepanjang hari.
 
-## Learning Laravel
+- **Pencapaian Tujuan Kesehatan**  
+  Tentukan tujuan kesehatan, seperti pengurangan berat badan atau peningkatan massa otot, dan lacak kemajuan Anda.
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+- **Rekomendasi Makanan Sehat**  
+  Berdasarkan data asupan gizi, aplikasi dapat memberikan rekomendasi makanan yang sesuai dengan tujuan kesehatan pengguna.
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+---
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 2000 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+## Teknologi dan Tools
 
-## Laravel Sponsors
+Aplikasi ini menggunakan berbagai teknologi web untuk membangun frontend dan backend yang fungsional, responsif, dan mudah digunakan.
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+### 1. **Frontend (Client-side)**
 
-### Premium Partners
+- **HTML5 & CSS3**  
+  Digunakan untuk struktur halaman dan styling aplikasi. HTML5 digunakan untuk memastikan kompatibilitas di berbagai platform dan perangkat, sementara CSS3 digunakan untuk desain responsif dan estetika tampilan.
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[WebReinvent](https://webreinvent.com/)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Jump24](https://jump24.co.uk)**
-- **[Redberry](https://redberry.international/laravel/)**
-- **[Active Logic](https://activelogic.com)**
-- **[byte5](https://byte5.de)**
-- **[OP.GG](https://op.gg)**
+- **Bootstrap**  
+  Framework CSS untuk membuat aplikasi responsif. Bootstrap digunakan untuk komponen antarmuka yang siap pakai seperti tombol, kolom, dan grid layout yang memastikan aplikasi berfungsi dengan baik di berbagai perangkat (desktop, tablet, mobile).
 
-## Contributing
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+### 2. **Backend (Server-side)**
 
-## Code of Conduct
+- **Node.js**  
+  Backend aplikasi ini menggunakan **Node.js**, platform JavaScript yang berbasis pada mesin **V8** untuk menjalankan JavaScript di sisi server. Node.js memungkinkan pengelolaan permintaan API secara efisien dan skalabel.
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+- **Express.js**  
+  **Express.js** adalah framework web minimalis yang digunakan untuk menangani routing dan mengelola endpoint API di sisi server. Express memudahkan pembuatan RESTful API dan mengelola permintaan HTTP.
 
-## Security Vulnerabilities
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+### 3. **API yang Digunakan**
 
-## License
+Aplikasi ini mengintegrasikan beberapa API eksternal untuk memberikan informasi gizi yang akurat dan terbaru:
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+- **Edamam API**  
+  API utama yang digunakan untuk mendapatkan informasi gizi makanan seperti kalori, protein, karbohidrat, lemak, dan mikronutrien lainnya. Aplikasi ini mengirimkan permintaan API ke Edamam untuk mencari informasi berdasarkan nama makanan atau ID produk.
+
+  **Dokumentasi Edamam API**: [Edamam API Documentation](https://developer.edamam.com/)
+
+- **Spoonacular API**  
+  API untuk mendapatkan resep makanan sehat beserta informasi nutrisi lengkap. Spoonacular juga memberikan informasi tentang bahan makanan yang dapat digunakan untuk membuat resep sehat.
+
+  **Dokumentasi Spoonacular API**: [Spoonacular API Documentation](https://spoonacular.com/food-api)
+
+---
+
+## Penggunaan API
+
+Aplikasi ini mengandalkan API eksternal untuk mengambil data gizi dan resep makanan. Berikut adalah cara aplikasi menggunakan API untuk mendapatkan data:
+
+### 1. **Edamam API**
+- Pengguna dapat mencari makanan, dan aplikasi mengirimkan permintaan API ke Edamam untuk mendapatkan informasi tentang kandungan kalori, lemak, protein, karbohidrat, dan mikronutrien lainnya.
+- API ini menyediakan data yang sangat lengkap untuk lebih dari 1 juta makanan dan resep.
+
+**Dokumentasi Edamam API**: [Edamam API Documentation](https://developer.edamam.com/)
+
+### 2. **Spoonacular API**
+- Aplikasi mengirimkan permintaan ke **Spoonacular** untuk mendapatkan resep makanan sehat berdasarkan bahan-bahan yang dimiliki pengguna.
+- API ini juga menyediakan informasi tentang kandungan gizi setiap resep yang ditemukan.
+
+**Dokumentasi Spoonacular API**: [Spoonacular API Documentation](https://spoonacular.com/food-api)
+
+---
